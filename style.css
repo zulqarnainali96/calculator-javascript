@@ -1,0 +1,79 @@
+*::before html::after {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  height: 750px;
+  gap : 5px;
+  border-radius: 10px;
+  background: #ccc;
+  padding: 0.3rem;
+}
+.screen {
+  width: 100%;
+  align-self: flex-start;
+  height: 250px;
+  border-radius: 14px;
+  background-color: azure;
+}
+
+.container .input-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem;
+}
+.container .input-container input {
+  width: 100%;
+  height: 100px;
+  /* background: green; */
+  text-align: right;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+}
+.container .input-container input:focus {
+  outline: none;
+}
+
+.calculator .btn-container {
+  border-radius: 8px;
+  padding : .25rem;
+  padding-block: 4px;
+  background-color: #444;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8rem;
+  display: grid;
+  gap: 0.2rem;
+  height: 100%;
+  width: 100%;
+}
+.calculator .btn-container button {
+    font-size: 35px;
+    padding : .4rem;
+    cursor: pointer;
+}
+.calculator .btn-container button:hover {
+    background-color: #444;
+    color: #fff;
+}
