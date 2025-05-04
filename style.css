@@ -22,7 +22,6 @@ h1 {
   width: 700px;
   height: 750px;
   gap : 5px;
-  border-radius: 10px;
   background: #ccc;
   padding: 0.3rem;
 }
@@ -31,7 +30,6 @@ h1 {
   align-self: flex-start;
   height: 250px;
   border-radius: 14px;
-  background-color: azure;
 }
 
 .container .input-container {
@@ -45,12 +43,16 @@ h1 {
 .container .input-container input {
   width: 100%;
   height: 100px;
-  /* background: green; */
   text-align: right;
   color: black;
   border: none;
   outline: none;
   font-size: 2rem;
+}
+.container .input-container #screen-1 {
+  font-size: 2.8rem !important;
+  font-weight: 500;
+
 }
 .container .input-container input:focus {
   outline: none;
